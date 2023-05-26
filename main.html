@@ -1,0 +1,129 @@
+<!-- 메인 화면 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./resources/css/main.css">
+        <title>메인 화면</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <!-- 로고 -->
+                <div id="logo">
+                    <h1><a href="#">가 온 누 리</a></h1>
+                </div>
+
+                <!-- 메인 네비게이션 -->
+                <nav id = "main-nav">
+                    <ul>
+                        <li class="main-nav">
+                            행사 소개
+                            <ul id="description-menu">
+                                <li><a href="#">경복궁</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">창경궁</a></li>
+                                <li><a href="#">창덕궁</a></li>
+                                <li><a href="#">종묘</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav"><a href="#">행사 예매</a></li>
+                        <li class="main-nav"><a href="#">한복 대여</a></li>
+                        <li class="main-nav"><a href="#">셔틀 버스</a></li>
+                        <li class="main-nav">열린 마당
+                            <ul id="community-menu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 로그인, 회원가입, 언어 네비게이션 -->
+                <nav id="sub-nav">
+                    <ul>
+                        <li class="sub-nav"><a href="#">로그인</a></li>
+                        <li class="sub-nav"><a href="#">회원가입</a></li>
+                        <li class="sub-nav">언어
+                            <ul id="LNG-menu">
+                                <li>한국어</li>
+                                <li>English</li>
+                                <li>日本語</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- 대표 이미지 슬라이드 -->
+                <section></section>
+                <!-- 고궁 행사 -->
+                <section id="main-description">
+                    <h3>고궁 행사</h3>
+                    <div>
+                        <div class="palace">
+                            <!-- 이미지 -->
+                            <img class="palace-img" src="./resources/img/경복궁.jpg" alt="경복궁">
+                            <!-- 이름 -->
+                            <h4>경복궁</h4>
+                            <!-- 설명 -->
+                            <p>경복궁(景福宮)은 태조4년(1395년)에 창건된 조선의 법궁(法宮)으로 대한민국을 대표하는 문화유산입니다.</p>
+                            <!-- https://www.royalpalace.go.kr/content/about/about01.asp -->
+                        </div>
+                        <div class="palace">
+                            <img class="palace-img" src="./resources/img/경복궁.jpg" alt="덕수궁">
+                            <h4>덕수궁</h4>
+                            <p>덕수궁德壽宮은 1897년에 선포된 황제국, 대한제국의 황궁으로 옛 이름은 경운궁慶運宮입니다.
+                            </p>
+                        </div>
+                        <div class="palace">
+                            <img class="palace-img" src="./resources/img/경복궁.jpg" alt="창경궁">
+                            <h4>창경궁</h4>
+                            <p>창경궁은 성종 14년(1483)에 세조비 정희왕후, 예종비 안순왕후, 덕종비(추존왕) 소혜왕후 세분의 대비를 모시기 위해 옛 수강궁터에 창건한 궁이다.</p>
+                        </div>
+                        <div class="palace">
+                            <img class="palace-img" src="./resources/img/경복궁.jpg" alt="창덕궁">
+                            <h4>창덕궁</h4>
+                            <p>창덕궁은 북악산 왼쪽 봉우리인 응봉자락에 자리 잡고 있는 조선의 궁궐이다.</p>
+                        </div>
+                        <div class="palace">
+                            <img class="palace-img" src="./resources/img/경복궁.jpg" alt="종묘">
+                            <h4>종묘</h4>
+                            <p>종묘는 조선왕조 역대 왕과 왕후 및 추존된 왕과 왕후의 신주를 모신 사당으로서 가장 정제되고 장엄한 건축물 중의 하나이다.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- 다양한 지원 제공 -->
+                <section id="main-service">
+                    <h3>다양한 지원 제공</h3>
+                    <div>
+                        <table border="1">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>셔틀버스</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>한복대여</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <!-- copyright -->
+            </footer>
+        </div>
+    </body>
+</html>
