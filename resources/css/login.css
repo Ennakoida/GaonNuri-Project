@@ -1,22 +1,5 @@
 @import "reset.css";
-
-
-/* 웹폰트 */
-/* 조선일보명조체 */
-@font-face {
-    font-family: 'Chosunilbo_myungjo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Pretendard체 */
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@import "font.css";
 
 
 /* 기본 요소  */
@@ -182,10 +165,92 @@ header {
                     }
 
 main {
-    background-color: #f9f5eb;
+    background-color: #F3F3F3;
     width: 100%;
-    height: auto;
+    height: 761px;
 }
+
+    main>section:first-child {
+        width: 800px;
+        height: 100%;
+        margin: 0 auto; 
+    }
+
+    #login-title {
+        /* width: auto; */
+        text-align: left;
+        padding-top: 200px;
+    }
+
+        #login-title > h1 {
+            display: inline-block;
+            font-family: 'Chosunilbo_myungjo', sans-serif, serif;
+            font-size: 2.5em;
+        }
+
+        #login-title > p {
+            display: inline-block;
+            width: auto;
+            color: #666666;
+            padding-left: 5px;
+            font-size: 1.0em;
+        }
+
+        #colorBox {
+            height: 8px;
+            width: 800px;
+            margin: 10px auto;
+            background-color: black;
+            /* 나중에 그라데이션 먹이기 */
+        }
+
+    #login {
+        width: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+        #login-input {
+            display: inline-block;
+        }
+
+            #login-input > input {
+                width: 250px;
+                height: 50px;
+                border: 2px solid #002B5B;
+                border-radius: 15px;
+            }
+
+            /* 로그인 버튼 */
+            #login-input > input:nth-of-type(3) {
+                background-color: #002B5B;
+                color: #F9F5EB;
+            }
+
+            #login-input > div {
+                color: #666666;
+            }
+
+            #login-input input, #login-input  p {
+                display: inline-block;
+            }
+
+        #sns-login {
+            display: inline-block;
+        }
+
+            #sns-login li {
+                /* 나중에 색 나눠서 지정해주기... */
+                background-color: whitesmoke;
+                width: 250px;
+                height: 50px;
+                margin: 15px;
+                border: 2px solid #002B5B;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
 footer {
     background-color: #e4dccf;
@@ -206,7 +271,7 @@ footer {
     right: 10px;
     bottom: 40px;
     z-index: 999; 
-    }
+}
 
 /* 하단 버튼 스타일 */
 #btn_bottom {
@@ -214,4 +279,4 @@ footer {
     right: 10px;
     bottom: 5px;
     z-index: 999; 
-    }
+}
