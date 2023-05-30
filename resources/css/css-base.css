@@ -1,22 +1,5 @@
 @import "reset.css";
-
-
-/* 웹폰트 */
-/* 조선일보명조체 */
-@font-face {
-    font-family: 'Chosunilbo_myungjo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Pretendard체 */
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@import "font.css";
 
 
 /* 기본 요소  */
@@ -206,7 +189,7 @@ footer {
     right: 10px;
     bottom: 40px;
     z-index: 999; 
-    }
+}
 
 /* 하단 버튼 스타일 */
 #btn_bottom {
@@ -214,4 +197,4 @@ footer {
     right: 10px;
     bottom: 5px;
     z-index: 999; 
-    }
+}
