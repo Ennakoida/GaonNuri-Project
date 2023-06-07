@@ -1,4 +1,4 @@
-<!-- -->
+<!-- 아이디 찾기 -->
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="../resources/css/reset.css">
         <link rel="stylesheet" href="../resources/css/common.css">
         <link rel="stylesheet" href="../resources/css/font.css">
-        <title>제목</title>
+        <link rel="stylesheet" href="../resources/css/user/find-id.css">
+        <title>아이디 찾기</title>
     </head>
     <body>
         <div id="container">
             <header>
                 <!-- 로고 -->
                 <div id="logo">
-                    <h1><a href=".../index.html">가온누리</a></h1>
+                    <h1><a href="../index.html">가온누리</a></h1>
                 </div>
                 <!-- 메인 네비게이션 -->
                 <nav id = "main-nav">
@@ -23,15 +24,15 @@
                         <li class="main-nav">
                             행사 소개
                             <ul id="description-menu">
-                                <a href="./event/description.html"><li>경복궁</li></a>
-                                <a href="#"><li>덕수궁</li></a>
-                                <a href="#"><li>창경궁</li></a>
-                                <a href="#"><li>창덕궁</li></a>
-                                <a href="#"><li>종묘</li></a>
+                                <a href="../event/description/gbg.html"><li>경복궁</li></a>
+                                <a href="../event/description/dsg.html"><li>덕수궁</li></a>
+                                <a href="../event/description/cgg.html"><li>창경궁</li></a>
+                                <a href="../event/description/cdk.html"><li>창덕궁</li></a>
+                                <a href="../event/description/jm.html"><li>종묘</li></a>
                             </ul>
                         </li>
-                        <li class="main-nav"><a href="./event/reservation.html">행사 예매</a></li>
-                        <li class="main-nav"><a href="./hanbok/rentals.html">한복 대여</a></li>
+                        <li class="main-nav"><a href="../event/reservation.html">행사 예매</a></li>
+                        <li class="main-nav"><a href="../hanbok/rentals.html">한복 대여</a></li>
                         <li class="main-nav"><a href="#">셔틀 버스</a></li>
                         <li class="main-nav">열린 마당
                             <ul id="community-menu">
@@ -46,8 +47,8 @@
                 <!-- 로그인, 회원가입, 한국어 네비게이션 -->
                 <nav id="sub-nav">
                     <ul>
-                        <li class="sub-nav"><a href="./user/login.html">로그인</a></li>
-                        <li class="sub-nav"><a href="./user/sign-up.html">회원가입</a></li>
+                        <li class="sub-nav"><a href="../user/login.html">로그인</a></li>
+                        <li class="sub-nav"><a href="../user/sign-up.html">회원가입</a></li>
                         <li class="sub-nav">한국어 ▾
                             <ul id="LNG-menu">
                                 <li>한국어</li>
@@ -59,7 +60,20 @@
                 </nav>
             </header>
             <main>
-                
+                <section id="find-id-title">
+                    <h1>아이디 찾기</h1>
+                    <div id="colorBox"></div>
+                </section>
+                <section id="find-id">
+                    <div>
+                        <img src="../resources/img/user/find-icon/user.png" alt="아이디 찾기">
+                    </div>
+                    <form action="" method="post">
+                        <input type="tel" name="user-phone" id="user-phone" placeholder="전화번호를 하이픈(-) 빼고 입력해 주세요." required>
+                        <br>
+                        <input type="submit" value="아이디 찾기" id="find-id-btn">
+                    </form>
+                </section>
             </main>
             <footer>
                 <!-- copyright -->
@@ -69,12 +83,20 @@
 
             <!-- 상단버튼-->
             <aside id="btn_top">
-                <a href="javascript:window.scrollTo(0,0);"><img src='./resources/img/top.png' alt='top' style="width: 35px;"/></a>
+                <a href="javascript:window.scrollTo(0,0);"><img src='../resources/img/top.png' alt='top' style="width: 35px;"/></a>
             </aside>
             <!-- 하단 버튼 -->
             <aside id="btn_bottom">
-                <a href="javascript:window.scrollTo(0,document.body.scrollHeight);"><img src='./resources/img/bottom.png' alt='bottom' style="width: 35px;"/></a>
+                <a href="javascript:window.scrollTo(0,document.body.scrollHeight);"><img src='../resources/img/bottom.png' alt='bottom' style="width: 35px;"/></a>
             </aside>
         </div>
+
+        <script>
+            document.querySelectorAll("input").forEach(input => {
+                input.addEventListener("invalid", () => {
+                    document.forms[0].classList.add("was-validated")
+                })
+            })
+        </script>
     </body>
 </html>
