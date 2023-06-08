@@ -66,20 +66,20 @@
                     <div id="colorBox"></div>
                 </section>
                 <section id="reservation">
+                    <!-- 달력 -->
                     <div id="calendar"></div>
+                    <!-- 예매 선택창 -->
                     <div id="reservation-input">
                         <form action="./reservation.html" method="post">
                             <div id="select-event">
                                 <label for="select-place">행사 선택</label><br>
                                 <select name="select-place" id="select-place" required>
                                     <option value="" disabled selected hidden>고궁을 선택해 주세요.</option>
-                                    <!-- <optgroup label="고궁 선택"> -->
                                         <option value="">경복궁</option>
                                         <option value="">덕수궁</option>
                                         <option value="">창경궁</option>
                                         <option value="">창덕궁</option>
                                         <option value="">종묘</option>
-                                    <!-- </optgroup> -->
                                 </select>
                                 <br>
                                 <label for="select-date">날짜 선택</label><br><input type="date" name="select-date" id="select-date" required>
@@ -87,10 +87,8 @@
                                 <label for="select-time">시간 선택</label><br>
                                 <select name="select-time" id="select-time" required>
                                     <option value="" disabled selected hidden>방문 시간을 선택해 주세요.</option>
-                                    <!-- <optgroup label="시간 선택"> -->
                                         <option value="">18 : 40</option>
                                         <option value="">19 : 40</option>
-                                    <!-- </optgroup>  -->
                                 </select>
                                 <br>
                                 <label for="select-people">예매 인원 선택</label><br><input type="number" name="select-people" id="select-people" min="1" max="10" placeholder="예매 인원을 선택해 주세요. (최대 10명)" required>
@@ -211,10 +209,7 @@
 
         <!-- 버튼 이벤트 -->
         <script>
-            // 예매자 정보 자동 입력
-            // var userName = document.getElementById("user-name").value;
-            // var userPhone = document.getElementById("user-phone").value;
-
+            // 예매자 정보 동일 선택 시, 자동 입력
             document.getElementById("login-user").addEventListener("change", function(){
                 if(document.getElementById("login-user").checked){
                     document.getElementById("user-name").value = "홍길동";
@@ -227,6 +222,7 @@
                 }
             });
 
+            // input 박스 내부 글씨 색 변경 용
             document.getElementById("select-place").addEventListener("change", function(){
                 document.getElementById("select-place").style.color = "black";
             });
@@ -240,35 +236,18 @@
             });
 
             document.getElementById("reset-btn").addEventListener("click", function(){
-                // document.getElementById("select-place").style.color = "#a9a9a9";
-                //document.getElementById("select-time").style.color = "#a9a9a9";
                 for(var i = 0; i < 2; i++){
                     document.querySelectorAll("select")[i].style.color = "#a9a9a9";
                 }
                 document.getElementById("select-date").style.color = "#a9a9a9";
             });
 
+            // 유효성 검사 용. 실패 시 > input 박스 색상 변경 처리 (빨강)
             document.querySelectorAll("input").forEach(input => {
                 input.addEventListener("invalid", () => {
                     document.forms[0].classList.add("was-validated")
                 })
             });
-
-            // document.querySelectorAll("select").forEach(input => {
-            //     input.addEventListener("invalid", () => {
-            //         document.forms[0].classList.add("was-validated")
-            //     })
-            // });
-
-            // var cnt = 0;
-            // document.getElementById("submit-btn").addEventListener("click", function(){
-            //     document.querySelectorAll("input").forEach(input => {
-            //         if(document.forms[0].classList.checkValidity() != "valid") cnt++;
-            //     })
-            //     if(cnt == 0){
-            //         confirm("예매를 진행하시겠습니까?");
-            //     }
-            // })
         </script>
     </body>
 </html>

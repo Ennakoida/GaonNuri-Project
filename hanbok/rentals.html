@@ -64,6 +64,7 @@
                     <h1>한복 대여</h1>
                     <div id="colorBox"></div>
                 </section>
+                <!-- 간략 소개 -->
                 <section id="short-description">
                     <div id="red-line"></div>
                     <h2>아름다운 우리의 멋을 찾아서</h2>
@@ -73,6 +74,7 @@
                         가온누리에서 원하시는 한복 선택 및 대여 후, 고궁 입장 전 ○○○ 매장을 찾아와주세요. 대여부터 환복까지 전부 빠르게 도와드리겠습니다.
                     </p>
                 </section>
+                <!-- 한복 대여 목록 -->
                 <section id="shopping">
                     <div id="select-input">
                         <form action="./rentals.html" method="get">
@@ -91,17 +93,22 @@
                                 <label for="select-date">대여 일자</label><br>
                                 <input type="datetime-local" name="select-date" id="select-date">
                             </div>
-                            <!-- <input type="reset" value="취소하기" id="reset-btn"> -->
                         </form>
                     </div>
                     <div class="rental-list">
                         <div class="hanbok">
+                            <!-- 대표 이미지 -->
                             <img src="../resources/img/hanbok/rentals/hanbok1.jpg" alt="여성용 여름 한복 세트" class="hanbok-img">
+                            <!-- 이름 -->
                             <h3><span>[ 여성용 ]</span> 여름 한복 세트</h3>
+                            <!-- 간략 소개 -->
                             <p>얇은 소재로 시원함과<br>유려한 선을 돋보인 한복입니다.</p>
+                            <!-- 가격 -->
                             <p>89,000원</p>
                             <div>
+                                <!-- 찜하기 버튼 -->
                                 <img src="../resources/img/hanbok/heart.png" alt="찜하기(안됨)">
+                                <!-- 대여하기 버튼 -->
                                 <button onclick="location.href='./detail.html'">대여하기 ></button>
                             </div>
                         </div>
@@ -179,16 +186,6 @@
                         </div>                        
                     </div>
                 </section>
-                <!-- <section id="way-to-come">
-                    <div id="map">
-                    </div>
-                    <div id="how">
-                        <h3>찾아오시는 길</h3>
-                        <h4>주소 : <span></span></h4>
-                        <h4>문의 전화 : <span></span></h4>
-                        <h4>이용 시간 : <span></span></h4>
-                    </div>
-                </section> -->
             </main>
             <footer>
                 <!-- copyright -->
@@ -207,6 +204,7 @@
         </div>
 
         <script>
+            // input 박스 내부 글씨 색 변경 용
             document.getElementById("select-place").addEventListener("change", function(){
                 document.getElementById("select-place").style.color = "black";
             });
@@ -220,58 +218,12 @@
                 document.getElementById("select-date").style.color = "#a9a9a9";
             });
 
+            // 유효성 검사 용. 실패 시 > input 박스 색상 변경 처리 (빨강)
             document.querySelectorAll("input").forEach(input => {
                 input.addEventListener("invalid", () => {
                     document.forms[0].classList.add("was-validated")
                 })
             })
-
-            // document.getElementsByClassName("heart-btn").forEach(input => {
-            //     input.addEventListener("click", () => {
-            //         document.getElementsByClassName("heart-btn").src = "../resources/img/hanbok/colored-heart.png";
-            //     })
-            // })
-
-            // function heart(){
-            //     document.getElementById("heart-btn1").src = "../resources/img/hanbok/colored-heart.png";
-            // }
-            
-            // var heartBtn1 = document.getElementById("heart-btn1");
-            // document.getElementById("heart-btn1").addEventListener("click", () => {
-            //     if(heartBtn1.src != "../resources/img/hanbok/colored-heart.png"){
-            //         heartBtn1.src = "../resources/img/hanbok/colored-heart.png";
-            //     }
-
-            // })
-
-            // document.getElementById("heart-btn2").addEventListener("click", () => {
-            //     document.getElementById("heart-btn2").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn3").addEventListener("click", () => {
-            //     document.getElementById("heart-btn3").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn4").addEventListener("click", () => {
-            //     document.getElementById("heart-btn4").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn5").addEventListener("click", () => {
-            //     document.getElementById("heart-btn5").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn6").addEventListener("click", () => {
-            //     document.getElementById("heart-btn6").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn7").addEventListener("click", () => {
-            //     document.getElementById("heart-btn7").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
-            // document.getElementById("heart-btn8").addEventListener("click", () => {
-            //     document.getElementById("heart-btn8").src = "../resources/img/hanbok/colored-heart.png";
-            // })
-
         </script>
     </body>
 </html>

@@ -14,7 +14,6 @@ main {
         #find-id-title > h1 {
             display: inline-block;
             font-family: 'Chosunilbo_myungjo', sans-serif, serif;
-            --font-weight: lighter;
             font-size: 2.5em;
             padding-bottom: 25px;
         }

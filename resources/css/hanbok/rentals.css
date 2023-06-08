@@ -1,6 +1,5 @@
 p {
     width: 100%;
-    --font-size: 1.0em;
     line-height: 1.5;
     padding-bottom: 15px;
 }
@@ -38,7 +37,6 @@ main {
         #rentals-title > h1 {
             display: inline-block;
             font-family: 'Chosunilbo_myungjo', sans-serif, serif;
-            --font-weight: lighter;
             font-size: 2.5em;
             padding-bottom: 25px;
         }
@@ -61,7 +59,6 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        --justify-content: center;
     }
 
         #red-line {
@@ -151,36 +148,14 @@ main {
                         z-index: 1;
                     }
 
-                /* 취소하기 버튼 */
-                /* #reset-btn  {
-                    color: #EA5455;
-                    border: 2px solid #EA5455;
-                    width: 100px;
-                    height: 49px;
-                    margin: 0px;
-                    padding: 0 20px;
-                    margin-left: 5px;
-                    border-radius: 8px;
-                    font-size: 0.9em;
-                    cursor:pointer;
-                }
-
-                #reset-btn:hover {
-                    background-color: #EA5455;
-                    color: #F9F5EB;
-                    font-weight: normal;
-                } */
-
-        /* .rental-list {
-
-        } */
-
+            /* 대여 목록 나열 */
             .hanbok {
                 display: inline-block;
                 padding: 15px;
                 padding-bottom: 50px;;
             }
 
+                /* 한복 이미지 */
                 .hanbok-img {
                     width: 200px;
                     height: 280px;
@@ -206,12 +181,14 @@ main {
                     justify-content: space-between;
                 }
 
+                    /* 찜하기 하트 */
                     .hanbok > div > img {
                         width: 33px;
                         height: 33px;
                         cursor:pointer;
                     }
 
+                    /* 대여하기 */
                     .hanbok button {
                         width: 160px;
                         height: 35px;
@@ -226,25 +203,6 @@ main {
                         color: #F9F5EB;
                         font-weight: normal;
                     }
-
-    /* #way-to-come {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 100px;
-    }
-
-        #map {
-            background-color: #bbb;
-            width: 300px;
-            height: 200px;
-        }
-
-        #how {
-            text-align: left;
-            margin-left: 40px;
-        } */
-
         
 
 

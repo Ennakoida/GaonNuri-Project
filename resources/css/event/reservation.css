@@ -14,7 +14,6 @@ main {
         #reservation-title > h1 {
             display: inline-block;
             font-family: 'Chosunilbo_myungjo', sans-serif, serif;
-            --font-weight: lighter;
             font-size: 2.5em;
             padding-bottom: 25px;
         }
@@ -26,9 +25,9 @@ main {
             background: linear-gradient(90deg, #002B5B, #002B5B 8%, #EA5455 8%, #EA5455 18%, #e4dccf 18%, #e4dccf 32%, #F9F5EB 32%, #F9F5EB 68%, #e4dccf 68%, #e4dccf 82%, #EA5455 82%, #EA5455 92%, #002B5B 92%, #002B5B 100%);
         }
 
+    /* 행사 예매 */
     #reservation {
         text-align: center;
-        --width: 800px;
         width: 1000px;
         margin-top: 90px; 
         margin-left: auto;
@@ -42,7 +41,6 @@ main {
         #calendar {
             width: 500px;
             height: 500px;
-            --background-color: #fff;
             color: #EA5455;
         }
 
@@ -145,7 +143,6 @@ main {
                     }
 
                         #login-user {
-                            --margin-top: 10px;
                             /* 체크박스 색상 변경 */
                             accent-color: #002B5B;           
                             position: relative;         

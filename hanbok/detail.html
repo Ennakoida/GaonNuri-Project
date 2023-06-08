@@ -61,11 +61,14 @@
             </header>
             <main>
                 <section id="detail-title">
+                    <!-- 선택한 대여 상품 이름 -->
                     <h1><span style="color: #EA5455;">[ 여성용 ]</span> 여름 한복 세트</h1>
                     <div id="colorBox"></div>
                 </section>
                 <section id="selected">
+                    <!-- 대표 사진 -->
                     <img src="../resources/img/hanbok/rentals/hanbok1.jpg" alt="여름 한복 세트">
+                    <!-- 옵션 선택 -->
                     <div id="select-option">
                         <form action="./rentals.html" method="get">
                             <label for="top-color">상의 색상</label><br>
@@ -144,16 +147,15 @@
                         </form>
                     </div>
                 </section>
+                <!-- 상품 상세 설명 -->
                 <section id="detail">
                     <div>
                         <h2>상품 상세 설명</h2>
                         <div id="detail-img">
                             <img src="../resources/img/hanbok/detail/detail1.jpg" alt="여름 한복 세트 상세 이미지 1"> 
-                            <!-- <div></div> -->
                             <img src="../resources/img/hanbok/detail/detail3.jpg" alt="여름 한복 세트 상세 이미지 2"> 
-                            <!-- <div></div> -->
                         </div>
-                        <!-- 선택한 한복에 대한 상세 설명 및 주의 문구가 들어갑니다. -->
+                        <!-- 선택한 한복에 대한 상세 설명 및 주의 문구 -->
                         <p>
                             얇은 소재로 시원함과 유려한 선을 돋보인 한복입니다.<br>
                             하루 종일 착용해도 불편함 하나 없는 쾌적하고 부드러운 착용감이 더욱 멋진 날을 만들어줍니다. <br><br>
@@ -179,6 +181,7 @@
         </div>
 
         <script>
+            // input 박스 내부 글씨 색 변경 용
             document.getElementById("top-color").addEventListener("change", function(){
                 document.getElementById("top-color").style.color = "black";
             });
@@ -199,20 +202,12 @@
                 document.getElementById("accessories").style.color = "black";
             });
 
+            // 유효성 검사 용. 실패 시 > input 박스 색상 변경 처리 (빨강)
             document.querySelectorAll("select").forEach(input => {
                 input.addEventListener("invalid", () => {
                     document.forms[0].classList.add("was-validated")
                 })
             })
-
-            // document.getElementById("submit-btn").addEventListener("click", function(){
-                
-            //     if(confirm("대여를 진행하시겠습니까?")) {
-            //         alert("결제창으로 이동합니다.");
-            //     } else {
-            //         alert("대여를 취소합니다.");
-            //     }
-            // })
         </script>
     </body>
 </html>

@@ -14,7 +14,6 @@ main {
         #find-pw-title > h1 {
             display: inline-block;
             font-family: 'Chosunilbo_myungjo', sans-serif, serif;
-            --font-weight: lighter;
             font-size: 2.5em;
             padding-bottom: 25px;
         }
@@ -31,7 +30,6 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        --justify-content: center;
     }
 
         #find-pw > div {

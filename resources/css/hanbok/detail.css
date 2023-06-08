@@ -26,7 +26,6 @@ main {
         #detail-title > h1 {
             display: inline-block;
             font-family: 'Chosunilbo_myungjo', sans-serif, serif;
-            --font-weight: lighter;
             font-size: 2.5em;
             padding-bottom: 25px;
         }
@@ -38,6 +37,7 @@ main {
             background: linear-gradient(90deg, #002B5B, #002B5B 8%, #EA5455 8%, #EA5455 18%, #e4dccf 18%, #e4dccf 32%, #F9F5EB 32%, #F9F5EB 68%, #e4dccf 68%, #e4dccf 82%, #EA5455 82%, #EA5455 92%, #002B5B 92%, #002B5B 100%);
         }
 
+    /* 상품 옵션 선택, 대여하기 */
     #selected {
         width: 900px;
         margin-top: 80px;
@@ -49,9 +49,6 @@ main {
     }
 
         #selected img {
-            /* width: 320px;
-            height: 445px; */
-
             width: 420px;
             height: 575px;
         }
@@ -108,40 +105,43 @@ main {
                 font-size: 0.9em;
             }
 
-        #select-option div:first-of-type {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 10px;
-        }
-        
-        #select-option div {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-            #select-option div > img {
-                width: 35px;
-                height: 35px;
-                cursor:pointer;
+            /* 가격 */
+            #select-option div:first-of-type {
+                display: flex;
+                justify-content: space-between;
+                margin: 30px 10px;
+            }
+            
+            /* 찜하기, 대여하기 */
+            #select-option div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
             }
 
-            #submit-btn {
-                width: 160px;
-                height: 35px;
-                border: 2px solid #EA5455;
-                border-radius: 100px;
-                color: #EA5455;
-                font-weight: bold;
-                cursor:pointer;
-            }
+                #select-option div > img {
+                    width: 35px;
+                    height: 35px;
+                    cursor:pointer;
+                }
 
-            #submit-btn:hover {
-                background-color: #EA5455;
-                color: #F9F5EB;
-                font-weight: normal;
-            }
+                #submit-btn {
+                    width: 160px;
+                    height: 35px;
+                    border: 2px solid #EA5455;
+                    border-radius: 100px;
+                    color: #EA5455;
+                    font-weight: bold;
+                    cursor:pointer;
+                }
 
+                #submit-btn:hover {
+                    background-color: #EA5455;
+                    color: #F9F5EB;
+                    font-weight: normal;
+                }
+
+    /* 상품 상세 설명 */
     #detail {
         width: 900px;
         height: auto;
@@ -157,17 +157,17 @@ main {
             padding: 30px 50px;
         }
 
-        #detail-img > img:first-child{
-            width: 600px;
-            height: 400px;
-            display: inline-block;
-            margin: 20px 0px;
-            margin-right: 15px;
-        }
+            #detail-img > img:first-child{
+                width: 600px;
+                height: 400px;
+                display: inline-block;
+                margin: 20px 0px;
+                margin-right: 15px;
+            }
 
-        #detail-img > img:last-child{
-            width: 280px;
-            height: 400px;
-            display: inline-block;
-            margin: 20px 0px;
-        }
+            #detail-img > img:last-child{
+                width: 280px;
+                height: 400px;
+                display: inline-block;
+                margin: 20px 0px;
+            }

@@ -160,13 +160,6 @@ main {
                 /* 카카오 */
                 /* https://developers.kakao.com/docs/latest/ko/kakaosync/design-guide */
                 /* https://developers.kakao.com/docs/latest/ko/kakaologin/design-guide#kakaologin-button-guide */
-                /* #kakao {
-                    --background-color: #FEE500;
-                    --color: rgba(0, 0, 0, 85%);
-                    --border: 2px solid #FEE500;
-                    margin: 15px;
-                } */
-
                 #kakao {
                     background-color: #FEE500;
                     border-style: none;
@@ -192,7 +185,6 @@ main {
                 /* https://developers.google.com/identity/branding-guidelines?hl=ko#matching */
                 #google {
                     background-color: white;
-                    --border-style: none;
                     border: 2px solid #ccc;
                     margin: 15px;
                     width: 100%;
