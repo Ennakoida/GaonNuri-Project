@@ -33,7 +33,7 @@ a {
 p {
     width: 120px;
     margin: 0 auto;
-    --font-size: 0.9em;
+    font-size: 0.9em;
     line-height: 1.5;
 }
 
